@@ -1,4 +1,6 @@
-# `angular-seed` — the seed for AngularJS apps
+# Alloy NG Mobile App Starter Kit (Angular 1.5)
+
+## from the original `angular-seed` — the seed for AngularJS apps
 
 This project is an application skeleton for a typical [AngularJS][angularjs] web app. You can use it
 to quickly bootstrap your angular webapp projects and dev environment for these projects.
