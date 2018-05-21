@@ -1,0 +1,17 @@
+<div class="page" ng-controller="RegisterCtrl">
+  <div class="col">
+    <h3>Register</h3>
+    <form>
+      <label for="email">Username:</label>
+      <input type="text" class="form-control" name="email" ng-model="email" placeholder="Email" required /><br />
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" name="password" ng-model="password" placeholder="Password" required />
+      <input type="password" class="form-control" name="confirm" ng-model="confirm" placeholder="Confirm" required />
+      <br />
+      <div class="text-center">
+        <span ng-if="registerErrMsg" class="text-danger text-bold">{{registerErrMsg}}</span>
+        <input type="button" class="btn btn-primary" value="Register" ng-click="processRegisterForm()" />
+      </div>
+    </form>
+  </div>  
+</div>

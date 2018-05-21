@@ -1,0 +1,18 @@
+<div class="page" ng-controller="LoginCtrl">
+  <div class="col">
+    <h3>Meals</h3>
+  </div>
+  <ul class="list-group home-menu">
+    <li class="list-group-item" ng-repeat="m in meals">
+        <a href="{{m.url}}" class="text-left">
+          <div class="meal-name">{{m.name}}</div>
+          <div class="meal-ingred" ng-id="m.ingredients"><i>ingredients:</i> {{m.ingredients}}</div>
+          <div class="meal-tags" ng-if="m.tags"><i>tags:</i> {{m.tags}}</div>
+        </a>
+        <div class="actions text-right v-top">
+          <i class="far fa-fw fa-edit"></i>
+          <i class="fas fa-fw fa-times"></i>
+        </div>
+    </li>
+  </ul>
+</div>

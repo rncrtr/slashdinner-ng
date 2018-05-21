@@ -1,0 +1,16 @@
+<div class="page" ng-controller="LoginCtrl">
+  <div class="col">
+    <h3>Login</h3>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" name="username" ng-model="login_email" placeholder="Email" required /><br />
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" name="password" ng-model="login_password" placeholder="Password" required />
+      <br />
+      <div class="text-center">
+        <span ng-if="loginErrMsg" class="text-danger text-bold">{{loginErrMsg}}</span>
+        <input type="button" class="btn btn-primary" value="Login" ng-click="processLoginForm()" />
+      </div>
+    </form>
+  </div>  
+</div>
